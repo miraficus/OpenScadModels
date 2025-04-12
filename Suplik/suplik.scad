@@ -1,6 +1,16 @@
 echo(version=version());
-// increase the visual detail
+// Increase the visual detail
 $fn = 100;
+
+// Turn rails on/off
+Rails = false;
+
+// Turn dividers on/off
+Dividers = true;
+
+// How many dividers you want
+DividerCount = 5;
+
 
 // Main Box
 module mainboxsolid() {
@@ -132,9 +142,56 @@ module handle() {
     }
 }
 
+
+module dividers() {  
+    Cubesize = 138 / (DividerCount +1);
+    
+    // Front
+    for (i = [0:DividerCount -1]) {
+        translate([(Cubesize -1) + Cubesize * (i + 0), 1, 2])
+        cube([1, 2, 28]);
+    } 
+      
+    for (i = [0:DividerCount -1]) {
+        translate([(Cubesize +2) + Cubesize * (i + 0), 1, 2])
+        cube([1, 2, 28]);
+    }
+    
+    // Back
+    for (i = [0:DividerCount -1]) {
+        translate([(Cubesize -1) + Cubesize * (i + 0), 49, 2])
+        cube([1, 2, 28]);
+    } 
+      
+    for (i = [0:DividerCount -1]) {
+        translate([(Cubesize +2) + Cubesize * (i + 0), 49, 2])
+        cube([1, 2, 28]);
+    }
+
+    
+}
+
+
+module result() {
+
+    mainbox();
+    stopper();
+    labelslot();
+    handle();
+    
+    if(Rails==true) {
+        rails();
+    }
+
+    if(Dividers==true) {
+        dividers();
+    }
+    
+}
+
+
 // Modules
-mainbox();
-//rails();
-stopper();
-labelslot();
-handle();
+
+result();
+
+
