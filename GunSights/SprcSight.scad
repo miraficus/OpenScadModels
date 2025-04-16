@@ -13,7 +13,7 @@ module ring() {
         color("red")
         rotate([0,0,22.5])
         linear_extrude(4)
-        translate([0, 0]) circle(d=24,$fn=8);  
+        translate([0, 0]) circle(d=24.5,$fn=8);  
     }    
 }    
  
