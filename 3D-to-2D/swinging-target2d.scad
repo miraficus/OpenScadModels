@@ -1,0 +1,1 @@
+projection(cut=false) import("C:/github/OpenScadModels/Target/swinging-target.stl");
