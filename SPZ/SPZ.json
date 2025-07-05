@@ -1,0 +1,15 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "$fn": "100",
+            "Number": "OPE NSCAD"
+        },
+        "New set 2": {
+            "$fn": "100",
+            "CCFontSize": "1.5000000000000002",
+            "CountryCode": "CZ",
+            "Number": "1B2 3456"
+        }
+    }
+}
