@@ -14,6 +14,8 @@ Check the box labeled "lazy-union"
 If BambuStudio asks to import it as
 one model with multiple parts click on "YES"!!!
 
+Font Download: https://www.slunecnice.cz/sw/font-pro-spz-cr/
+
 */
 
     
