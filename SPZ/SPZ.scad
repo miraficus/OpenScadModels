@@ -16,6 +16,7 @@ one model with multiple parts click on "YES"!!!
 
 Font Download: https://www.slunecnice.cz/sw/font-pro-spz-cr/
 
+Please use only UPPERCASE letters and numbers.
 */
 
     
