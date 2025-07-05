@@ -34,7 +34,7 @@ CountryCode = "CZ";
 CCFontSize = 1.5;
 
 /* [Hidden] */
-TextFont = "SPZ CZ:style=Bold";
+TextFont = "SPZ CZ EDIT:style=Bold";
 FontSize = 3.9;
 
 
