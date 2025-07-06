@@ -16,7 +16,7 @@ one model with multiple parts click on "YES"!!!
 
 Font Download: https://www.slunecnice.cz/sw/font-pro-spz-cr/
 
-Please use only UPPERCASE letters and numbers.
+Please use only UPPERCASE letters and numbers. Or use EDITED font.
 */
 
     
@@ -26,6 +26,9 @@ $fn = 100;
 
 // Change the plate number
 Number = "1B2 3456";
+
+// Change the name on bottom
+NameText = "OPENSCAD";
 
 // Change the plate country code
 CountryCode = "CZ";
@@ -87,6 +90,10 @@ module middle() {
         color("black")
         translate([0,0,1.5])
         number();
+         
+        color("black")       
+        translate([0,0,0])
+        eman();
     }  
 }
 
@@ -123,6 +130,15 @@ module number() {
     text(Number, font = TextFont, size = FontSize, valign = "center", halign = "center");
 }
 
+//Name on the bottom
+module eman() {
+    color("black")
+    translate([44.5, 9])
+    mirror([1,0,0])
+    linear_extrude(1.5)
+    text(NameText, font = TextFont, size = FontSize, valign = "center", halign = "center");
+}
+
 
 translate([0,0,-1.5])
 border();
@@ -132,8 +148,8 @@ translate([0,0,-1.5])
 ribbon();
 number();
 country();
-
-
+translate([0,0,-1.5])
+eman();
 
 
 
