@@ -18,8 +18,8 @@ module kolecko() {
 //Front bezel
 difference() {
     color("yellow")
-    translate([0,-1,-1])
-    cube([6,16,53]);
+    translate([-1,-1,-1])
+    cube([7,16,53]);
 
     color("yellow")
     translate([-1,0,0])
@@ -27,7 +27,7 @@ difference() {
 
     color("yellow")
     translate([5,0,2])
-    cube([3,14,45]);
+    cube([3,14,47]);
 }
 
 //Clips
@@ -40,11 +40,11 @@ translate([2,13,2])
 cube([1,1,3]);
 
 color("yellow")
-translate([2,0,41])
+translate([2,0,39])
 cube([1,1,3]);
 
 color("yellow")
-translate([2,13,41])
+translate([2,13,39])
 cube([1,1,3]);
 
 //Back
@@ -60,10 +60,15 @@ difference() {
     //Port
     color("green")
     translate([20,2.5,-1])
-    cube([3,9,2]); 
+    cube([3.5,9,2]); 
+
+    //LED Hole
+    color("white")
+    translate([26,7,-1])
+    cylinder(d=1, h=6);  
 }
 
-//Screw
+//ScrewPost
 difference() {
     color("black")
     rotate([0,90,0])
