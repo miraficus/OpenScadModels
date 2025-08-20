@@ -40,11 +40,11 @@ translate([2,13,2])
 cube([1,1,3]);
 
 color("yellow")
-translate([2,0,39])
+translate([2,0,40])
 cube([1,1,3]);
 
 color("yellow")
-translate([2,13,39])
+translate([2,13,40])
 cube([1,1,3]);
 
 //Back
