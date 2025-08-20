@@ -18,12 +18,12 @@ module kolecko() {
 //Front bezel
 difference() {
     color("yellow")
-    translate([-1,-1,-1])
-    chamferCube([7, 16, 53], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 1);
+    translate([-1.5,-1,-1])
+    chamferCube([7.5, 16, 53], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 1);
 
     color("yellow")
-    translate([-1,0,0])
-    chamferCube([6, 14, 51], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 0.5); 
+    translate([-1.5,0,0])
+    chamferCube([6.5, 14, 51], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 0.5); 
 
     color("yellow")
     translate([5,0,2])
@@ -65,7 +65,7 @@ difference() {
     //LED Hole
     color("white")
     translate([26,7,-1])
-    cylinder(d=1, h=6);  
+    cylinder(d=1.5, h=6);  
 }
 
 //ScrewPost
