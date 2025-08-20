@@ -19,11 +19,11 @@ module kolecko() {
 difference() {
     color("yellow")
     translate([-1,-1,-1])
-    cube([7,16,53]);
+    chamferCube([7, 16, 53], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 1);
 
     color("yellow")
     translate([-1,0,0])
-    cube([6,14,51]); 
+    chamferCube([6, 14, 51], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 0.5); 
 
     color("yellow")
     translate([5,0,2])
@@ -51,11 +51,11 @@ cube([1,1,3]);
 difference() {
     color("red")
     translate([6,-1,-1])
-    cube([25,16,53]);
+    chamferCube([25, 16, 53], [[1, 1, 1, 1], [0, 0, 1, 1], [0, 1, 1, 0]], 1);
 
     color("red")
-    translate([6,0,0])
-    cube([24,14,51]); 
+    translate([6,0,0]) 
+    chamferCube([24, 14, 51], [[1, 1, 1, 1], [0, 0, 1, 1], [0, 1, 1, 0]], 0.5);
 
     //Port
     color("green")
@@ -82,7 +82,11 @@ difference() {
 
 }
 
-
+    color("black")
+    rotate([90,-90,0])
+    translate([1.5, -12])
+    linear_extrude(1.5)
+    text("CONNEX", font = "Impact", size = 11.2, valign = "center", halign = "left");
 
 
 
