@@ -8,13 +8,6 @@ include <Chamfers-for-OpenSCAD/Chamfer.scad>;
 // Increase the visual detail
 $fn = 100;
 
-module kolecko() {
-    color("red")
-    translate([0,0,0])    
-    chamferCylinder(19, 12, 12, 0.5, 0);
-
-}
-
 //Front bezel
 difference() {
     color("yellow")
@@ -60,12 +53,23 @@ difference() {
     //Port
     color("green")
     translate([20,2.5,-1])
-    cube([3.5,9,2]); 
-
+    chamferCube([3.5, 9, 2], [[0, 0, 0, 0], [0, 0, 0, 0], [1, 1, 1, 1]], 0.3); 
+    
     //LED Hole
     color("white")
     translate([26,7,-1])
     cylinder(d=1.5, h=6);  
+}
+
+//Port
+difference() {
+    color("green")
+    translate([19,1.5,-1])
+    chamferCube([5.5, 11, 2], [[0, 0, 0, 0], [0, 0, 0, 0], [1, 1, 1, 1]], 0.3);
+    
+    color("green")
+    translate([20,2.5,-1])
+    chamferCube([3.5, 9, 2], [[0, 0, 0, 0], [0, 0, 0, 0], [1, 1, 1, 1]], 0.3); 
 }
 
 //ScrewPost
@@ -85,7 +89,7 @@ difference() {
     color("black")
     rotate([90,-90,0])
     translate([1.5, -12])
-    linear_extrude(1.5)
+    linear_extrude(1.3)
     text("CONNEX", font = "Impact", size = 11.2, valign = "center", halign = "left");
 
 
