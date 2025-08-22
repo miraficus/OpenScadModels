@@ -11,8 +11,8 @@ $fn = 100;
 //Front bezel
 difference() {
     color("yellow")
-    translate([-2,-1,-1])
-    chamferCube([8, 16, 53], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 1);
+    translate([-1.5,-1,-1])
+    chamferCube([7.5, 16, 53], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 1);
 
     color("yellow")
     translate([-2.1,0,0])
