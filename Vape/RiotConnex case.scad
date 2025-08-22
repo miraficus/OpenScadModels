@@ -90,12 +90,12 @@ difference() {
 difference() {    
     color("black")
     rotate([-90,0,00])
-    translate([-2,-27,15])
+    translate([-1.5,-27,15])
     cylinder(d=28, h=0.3);
 
     color("white")
     rotate([-90,0,00])
-    translate([-2,-27,14.7])
+    translate([-1.5,-27,14.7])
     cylinder(d=16, h=0.8);
     
     color("black")
