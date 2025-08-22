@@ -99,7 +99,7 @@ difference() {
     cylinder(d=16, h=0.8);
     
     color("black")
-    translate([-28,14.9,13])
+    translate([-27.5,14.9,13])
     cube([26,1,28]);
 }
 
