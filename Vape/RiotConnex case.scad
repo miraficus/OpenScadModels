@@ -77,7 +77,7 @@ difference() {
     color("black")
     rotate([0,90,0])
     translate([-10.5,7,24])
-    cylinder(d=3, h=6);
+    cylinder(d=4, h=6);
 
     color("white")
     rotate([0,90,0])
