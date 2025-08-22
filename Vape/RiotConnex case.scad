@@ -11,12 +11,12 @@ $fn = 100;
 //Front bezel
 difference() {
     color("yellow")
-    translate([-1.5,-1,-1])
-    chamferCube([7.5, 16, 53], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 1);
+    translate([-2,-1,-1])
+    chamferCube([8, 16, 53], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 1);
 
     color("yellow")
-    translate([-1.5,0,0])
-    chamferCube([6.5, 14, 51], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 0.5); 
+    translate([-2,0,0])
+    chamferCube([7, 14, 51], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 0.5); 
 
     color("yellow")
     translate([5,0,2])
@@ -86,6 +86,24 @@ difference() {
 
 }
 
+//Circle
+difference() {    
+    color("black")
+    rotate([-90,0,00])
+    translate([-2,-26,15])
+    cylinder(d=26, h=0.3);
+
+    color("white")
+    rotate([-90,0,00])
+    translate([-2,-26,14.7])
+    cylinder(d=16, h=0.8);
+    
+    color("black")
+    translate([-28,14.9,13])
+    cube([26,1,26]);
+}
+
+//Text
     color("black")
     rotate([90,-90,0])
     translate([1.5, -12])
