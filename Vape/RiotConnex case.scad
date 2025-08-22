@@ -15,11 +15,11 @@ difference() {
     chamferCube([8, 16, 53], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 1);
 
     color("yellow")
-    translate([-2,0,0])
-    chamferCube([7, 14, 51], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 0.5); 
+    translate([-2.1,0,0])
+    chamferCube([7.1, 14, 51], [[1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]], 0.5); 
 
     color("yellow")
-    translate([5,0,2])
+    translate([4,0,2])
     cube([3,14,47]);
 }
 
@@ -47,13 +47,13 @@ difference() {
     chamferCube([25, 16, 53], [[1, 1, 1, 1], [0, 0, 1, 1], [0, 1, 1, 0]], 1);
 
     color("red")
-    translate([6,0,0]) 
-    chamferCube([24, 14, 51], [[1, 1, 1, 1], [0, 0, 1, 1], [0, 1, 1, 0]], 0.5);
+    translate([5.9,0,0]) 
+    chamferCube([24.1, 14, 51], [[1, 1, 1, 1], [0, 0, 1, 1], [0, 1, 1, 0]], 0.5);
 
     //Port
-    color("green")
-    translate([20,2.5,-1])
-    chamferCube([3.5, 9, 2], [[0, 0, 0, 0], [0, 0, 0, 0], [1, 1, 1, 1]], 0.3); 
+    color("red")
+    translate([20,2.5,-2])
+    chamferCube([3.5, 9, 3], [[0, 0, 0, 0], [0, 0, 0, 0], [1, 1, 1, 1]], 0.3); 
     
     //LED Hole
     color("white")
@@ -63,13 +63,13 @@ difference() {
 
 //Port
 difference() {
-    color("green")
+    color("red")
     translate([19,1.5,-1])
     chamferCube([5.5, 11, 2], [[0, 0, 0, 0], [0, 0, 0, 0], [1, 1, 1, 1]], 0.3);
     
-    color("green")
-    translate([20,2.5,-1])
-    chamferCube([3.5, 9, 2], [[0, 0, 0, 0], [0, 0, 0, 0], [1, 1, 1, 1]], 0.3); 
+    color("red")
+    translate([20,2.5,-2])
+    chamferCube([3.5, 9, 4], [[0, 0, 0, 0], [0, 0, 0, 0], [1, 1, 1, 1]], 0.3); 
 }
 
 //ScrewPost
