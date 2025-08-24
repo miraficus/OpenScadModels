@@ -34,11 +34,11 @@ cube([1,1,3]);
 
 //Middle Clips
 color("yellow")
-translate([2,0,22])
+translate([2,0,23])
 cube([1,1,3]);
 
 color("yellow")
-translate([2,13,22])
+translate([2,13,23])
 cube([1,1,3]);
 
 //Top Clip
