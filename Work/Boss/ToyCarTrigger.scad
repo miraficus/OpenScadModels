@@ -11,8 +11,6 @@ include <Chamfers-for-OpenSCAD/Chamfer.scad>;
 $fn = 100;
 
 
-
-
 color("lightblue")
 translate([0,0,0])
 cube([7,7.5,6]);
@@ -50,11 +48,11 @@ difference() {
 module osa() {
     color("pink")
     translate([-8.5,3.5,4.5])
-    cylinder(d=3, h=6);
+    cylinder(d=2.5, h=6);
 
     color("pink")
     translate([-8.5,3.5,1.5])
-    cylinder(d=5, h=3);
+    cylinder(d=4, h=3);
 
     color("pink")
     translate([-8.5,3.5,0.5])
