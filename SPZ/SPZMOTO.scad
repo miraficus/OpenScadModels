@@ -120,7 +120,7 @@ module ribbon() {
         cylinder(d=6, h=5);
         
         color("white")
-        translate([0,17,1.5])
+        translate([0,0,1.5])
         country();
     }
 }
